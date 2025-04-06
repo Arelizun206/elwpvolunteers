@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join a Circle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5faff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background: #eef5f9;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .sidebar p {
+            color: #0077b6;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .menu li:hover {
+            background: #ddeaf1;
+            border-radius: 5px;
+        }
+        .menu li img {
+            margin-right: 10px;
+        }
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #eef5f9;
+            padding: 10px;
+            border-radius: 8px;
+            width: 80%;
+        }
+        .search-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        .circle-list {
+            margin-top: 20px;
+        }
+        .circle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .circle-info {
+            display: flex;
+            align-items: center;
+        }
+        .circle-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .circle-info div {
+            font-size: 14px;
+        }
+        .join-btn {
+            background: #0077b6;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .join-btn:hover {
+            background: #005f8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>Elena</h2>
+        <p>elena@waterworks.com</p>
+        <ul class="menu">
+            <li><strong>Profile</strong></li>
+            <li>Notifications</li>
+            <li>Messages</li>
+            <li>Create</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Join a Circle</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Search for a circle">
+        </div>
+
+        <div class="circle-list">
+            <div class="circle">
+                <div class="circle-info">
+                    <img src="https://via.placeholder.com/50" alt="Community Building">
+                    <div>
+                        <strong>Community Building</strong><br>
+                        60 members | 10 discussions | 2 events
+                    </div>
+                </div>
+                <button class="join-btn">Join</button>
+            </div>
+
+            <div class="circle">
+                <div class="circle-info">
+                    <img src="https://via.placeholder.com/50/00aa00" alt="Green Energy">
+                    <div>
+                        <strong>Green Energy</strong><br>
+                        120 members | 20 discussions | 3 events
+                    </div>
+                </div>
+                <button class="join-btn">Join</button>
+            </div>
+
+            <div class="circle">
+                <div class="circle-info">
+                    <img src="https://via.placeholder.com/50/aaaaaa" alt="Climate Justice">
+                    <div>
+                        <strong>Climate Justice</strong><br>
+                        80 members | 15 discussions | 5 events
+                    </div>
+                </div>
+                <button class="join-btn">Join</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
