@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Public+Sans:wght@400;500;700;900&display=swap"
+    />
+    <title>Volunteer Fit Survey</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f8fafb] min-h-screen flex flex-col items-center justify-center font-['Public_Sans',_sans-serif]">
+    <div class="w-full max-w-[512px] p-5 bg-white shadow-lg rounded-lg">
+      <h1 class="text-[#0e161b] text-[22px] font-bold text-center pb-3">Volunteer Fit Survey</h1>
+      <p class="text-[#4f7a96] text-center pb-3">Help us understand how you can best contribute!</p>
+      
+      <!-- Personal Information -->
+      <div class="border-t border-[#d1dde6] py-5">
+        <p class="text-[#507a95] text-sm">Full Name</p>
+        <input type="text" class="border border-gray-300 rounded px-2 py-1 w-full" placeholder="Enter your name" />
+      </div>
+      <div class="border-t border-[#d1dde6] py-5">
+        <p class="text-[#507a95] text-sm">Email</p>
+        <input type="email" class="border border-gray-300 rounded px-2 py-1 w-full" placeholder="Enter your email" />
+      </div>
+      
+      <!-- Background Information -->
+      <h3 class="text-[#0e161b] text-lg font-bold pt-4 pb-2">Tell us about yourself</h3>
+      <div class="flex flex-col gap-3">
+        <label class="flex items-center gap-3">
+          <input type="radio" name="occupation" /> Student
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="radio" name="occupation" /> Working Professional
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="radio" name="occupation" /> Retired
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="radio" name="occupation" /> Other
+        </label>
+       
+      </div>
+      
+      <!-- Availability -->
+      <h3 class="text-[#0e161b] text-lg font-bold pt-4 pb-2">How much time can you commit?</h3>
+      <select class="border border-gray-300 rounded px-2 py-1 w-full">
+        <option>1-2 hours per week</option>
+        <option>3-5 hours per week</option>
+        <option>Only on weekends</option>
+        <option>Flexible schedule</option>
+        
+      </select>
+      
+      <!-- Skills & Interests -->
+      <h3 class="text-[#0e161b] text-lg font-bold pt-4 pb-2">What skills do you bring?</h3>
+      <div class="flex flex-col gap-3">
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Event Planning
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Public Speaking
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Teaching & Mentoring
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Social Media & Marketing
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Fundraising & Grants
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Hands-on Conservation Work
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Other
+        </label>
+        <input type="text" class="border border-gray-300 rounded px-2 py-1 w-full" placeholder="Please specify if other" />
+      </div>
+      
+      <!-- Volunteer Circles -->
+      <h3 class="text-[#0e161b] text-lg font-bold pt-4 pb-2">Which circles interest you?</h3>
+      <div class="flex flex-col gap-3">
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Governance Circle
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Learning Circle
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Design Circle
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Inclusivity Circle
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Communications Circle
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Fundraising Circle
+        </label>
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> Other/Not interested in joining a circle but stil want to volunteer!
+        </label>
+        <input type="text" class="border border-gray-300 rounded px-2 py-1 w-full" placeholder="Please specify if other" />
+      </div>
+      
+      <!-- Motivation & Expectations -->
+      <h3 class="text-[#0e161b] text-lg font-bold pt-4 pb-2">Why do you want to volunteer?</h3>
+      <textarea class="border border-gray-300 rounded px-2 py-1 w-full" rows="3" placeholder="Tell us your motivation..."></textarea>
+      
+      <h3 class="text-[#0e161b] text-lg font-bold pt-4 pb-2">Are you comfortable leading activities?</h3>
+      <select class="border border-gray-300 rounded px-2 py-1 w-full">
+        <option>Yes, I love leading!</option>
+        <option>I'm happy to support but prefer not to lead</option>
+        <option>No, I prefer working behind the scenes</option>
+      </select>
+      
+      <!-- Agreement -->
+      <div class="border-t border-[#d1dde6] py-5">
+        <label class="flex items-center gap-3">
+          <input type="checkbox" /> I agree to commit to my selected role and responsibilities.
+        </label>
+      </div>
+      
+      <!-- Submit Button -->
+      <div class="flex justify-center py-3">
+        <button class="bg-[#1d8cd7] text-white px-4 py-2 rounded-lg"><a href="Thankyou.html">Submit</a></button> 
+      </div>
+    </div>
+  </body>
+</html>
